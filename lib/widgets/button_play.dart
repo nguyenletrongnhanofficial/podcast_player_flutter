@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class TogglePlay extends StatefulWidget {
-  const TogglePlay({super.key});
+class ButtonPlay extends StatefulWidget {
+  const ButtonPlay({super.key});
 
   @override
-  State<TogglePlay> createState() => _TogglePlayState();
+  State<ButtonPlay> createState() => _ButtonPlayState();
 }
 
 bool play = false;
 
-class _TogglePlayState extends State<TogglePlay> {
+class _ButtonPlayState extends State<ButtonPlay> {
   @override
   Widget build(BuildContext context) {
     return InkWell(

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-
+//Region Model
 import '../models/category.dart';
 
-class ListCategoryItem extends StatelessWidget {
+class ListCategoryWidget extends StatelessWidget {
   final Category category;
-  const ListCategoryItem({Key? key, required this.category}) : super(key: key);
+  const ListCategoryWidget({Key? key, required this.category})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

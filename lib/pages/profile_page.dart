@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:podcast_player_flutter/values/app_color.dart';
 
 class ProfilePage extends StatelessWidget {

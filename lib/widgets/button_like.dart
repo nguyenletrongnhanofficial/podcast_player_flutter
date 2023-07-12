@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:podcast_player_flutter/values/app_color.dart';
 
-class ToggleHeart extends StatefulWidget {
-  const ToggleHeart({super.key});
+class ButtonLike extends StatefulWidget {
+  const ButtonLike({super.key});
 
   @override
-  State<ToggleHeart> createState() => _ToggleHeartState();
+  State<ButtonLike> createState() => _ButtonLikeState();
 }
 
 bool like = false;
 
-class _ToggleHeartState extends State<ToggleHeart> {
+class _ButtonLikeState extends State<ButtonLike> {
   @override
   Widget build(BuildContext context) {
     return IconButton(

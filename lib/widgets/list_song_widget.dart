@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+//Region Model
 import '../models/song.dart';
 
-class ListSongItem extends StatelessWidget {
+class ListSongWidget extends StatelessWidget {
   final List<Song> listSong;
   final Song song;
-  const ListSongItem({super.key, required this.listSong, required this.song});
+  const ListSongWidget({super.key, required this.listSong, required this.song});
 
   @override
   Widget build(BuildContext context) {

@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:podcast_player_flutter/values/app_color.dart';
 
-import '../datas/list_category.dart';
-import '../datas/list_song.dart';
-import '../widgets/list_category_item.dart';
-import '../widgets/list_song_item.dart';
+//Region Data
+import '../datas/category.dart';
+import '../datas/song.dart';
+
+//Region Widget
+import '../widgets/list_category_widget.dart';
+import '../widgets/list_song_widget.dart';
+
+//Region Page
 import 'player_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -116,7 +119,7 @@ class _HomePageState extends State<HomePage> {
                     scrollDirection: Axis.horizontal,
                     itemCount: listCategory.length,
                     itemBuilder: (context, index) {
-                      return ListCategoryItem(category: listCategory[index]);
+                      return ListCategoryWidget(category: listCategory[index]);
                     }),
               ),
               const SizedBox(
@@ -162,7 +165,7 @@ class _HomePageState extends State<HomePage> {
                                     )),
                           );
                         },
-                        child: ListSongItem(
+                        child: ListSongWidget(
                             listSong: listSong, song: listSong[index]),
                       );
                     }),

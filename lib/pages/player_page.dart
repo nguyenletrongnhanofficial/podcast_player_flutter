@@ -1,13 +1,15 @@
 import 'dart:ui';
-
 import 'package:audio_video_progress_bar/audio_video_progress_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:podcast_player_flutter/values/app_color.dart';
 
+//Region Model
 import '../models/song.dart';
-import '../widgets/list_song_item.dart';
-import '../widgets/toggle_heart.dart';
-import '../widgets/toggle_play.dart';
+
+//Region Widget
+import '../widgets/list_song_widget.dart';
+import '../widgets/button_like.dart';
+import '../widgets/button_play.dart';
 
 class PlayerPage extends StatelessWidget {
   final Song song;
@@ -56,7 +58,7 @@ class PlayerPage extends StatelessWidget {
               ),
             ),
           ),
-          const Positioned(top: 5, right: 18, child: ToggleHeart())
+          const Positioned(top: 5, right: 18, child: ButtonLike())
         ]),
       ),
     );
@@ -68,7 +70,7 @@ class PlayerPage extends StatelessWidget {
       children: [
         _buildControlButton("assets/images/shuffle.png", () {}),
         _buildControlButton("assets/images/back.png", () {}),
-        const TogglePlay(),
+        const ButtonPlay(),
         _buildControlButton("assets/images/next.png", () {}),
         _buildControlButton("assets/images/sync.png", () {}),
       ],
@@ -94,7 +96,7 @@ class PlayerPage extends StatelessWidget {
                         )),
               );
             },
-            child: ListSongItem(listSong: listSong, song: listSong[index]),
+            child: ListSongWidget(listSong: listSong, song: listSong[index]),
           );
         },
       ),

@@ -1,11 +1,12 @@
 import 'package:curved_labeled_navigation_bar/curved_navigation_bar.dart';
 import 'package:curved_labeled_navigation_bar/curved_navigation_bar_item.dart';
 import 'package:flutter/material.dart';
-import 'package:podcast_player_flutter/pages/chat_page.dart';
-import 'package:podcast_player_flutter/pages/explore_page.dart';
-import 'package:podcast_player_flutter/pages/profile_page.dart';
-import 'package:podcast_player_flutter/values/app_color.dart';
+import '../values/app_color.dart';
 
+//Region Page
+import '../pages/chat_page.dart';
+import '../pages/explore_page.dart';
+import '../pages/profile_page.dart';
 import '../pages/home_page.dart';
 import '../pages/trend_page.dart';
 
